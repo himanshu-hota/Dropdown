@@ -29,7 +29,7 @@ const Dropdown = () => {
             <section className="dropdownContainer w-full h-[50vh] p-4 ">
 
 
-                <select name="Select" id="select" ref={selectRef} value={selectRef} className='border-none outline-none w-full md:w-[50%] mx-auto block bg-slate-400 p-3 overflow-hidden' onMouseOver={showDropdown} onMouseOut={hideDropdown} >
+                <select name="Select" id="select" ref={selectRef} className='border-none outline-none w-full md:w-[50%] mx-auto block bg-slate-400 p-3 overflow-hidden' onMouseOver={showDropdown} onMouseOut={hideDropdown} >
 
                     {
                         options.map((item, idx) => <option value={item} key={idx + 'fda'}>{item}</option>)
